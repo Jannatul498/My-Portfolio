@@ -65,7 +65,7 @@ body{
   display:grid;
   grid-template-columns: 260px 1fr;
   gap:24px;
-  align-items:center;
+  align-items:start;
 }
 .profile-pic{
   width:260px;
