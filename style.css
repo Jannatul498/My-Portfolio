@@ -62,7 +62,7 @@ body{
   border:1px solid rgba(255,255,255,0.03);
 }
 .hero{
-  display:block; /* remove grid */
+  display:block;  /* REMOVE grid layout */
 }
 .profile-pic{
   width:260px;
@@ -161,7 +161,6 @@ body{
 .about h1{
   margin:0;
   font-size:28px;
-  font-weight:700;
 }
 .top-pic{
   width:120px;
@@ -180,13 +179,12 @@ body{
 
 .intro{
   display:flex;
-  align-items:center; /* keeps it centered vertically */
+  align-items:center;
   gap:20px;
 }
-
 .small-pic{
-  width:120px;
-  height:120px;
+  width:140px !important;
+  height:140px !important;
   border-radius:50%;
   overflow:hidden;
   border:2px solid rgba(124,58,237,0.3);
