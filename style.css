@@ -99,5 +99,66 @@ body{
   .nav a{margin-left:10px}
   .container{margin:20px;padding:16px}
 }
+/* Teaching Section Styling */
+.semester-group {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.semester-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.semester-group h3 {
+  font-size: 16px;
+  color: #fff;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: adds a small purple dot before the semester name */
+.semester-group h3::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.course-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 8px;
+}
+
+.course-list li {
+  font-size: 14px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: transform 0.2s ease;
+}
+
+.course-list li:hover {
+  transform: translateX(5px);
+  border-color: rgba(124, 58, 237, 0.2);
+}
+
+.course-list li strong {
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 4px;
+}
 .footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:12px}
 .link{color:var(--accent);text-decoration:none}
